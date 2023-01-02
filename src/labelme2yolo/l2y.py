@@ -118,7 +118,8 @@ def save_yolo_label(json_name, label_dir_path, target_dir, yolo_obj_list):
 
 
 def save_yolo_image(json_data, json_name, image_dir_path, target_dir):
-    img_name = json_name.replace(".json", ".png")
+    # img_name = json_name.replace(".json", ".png")
+    img_name = json_name.replace(".json", ".jpg")
     img_path = os.path.join(image_dir_path, target_dir, img_name)
 
     if not os.path.exists(img_path):
